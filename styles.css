@@ -27,7 +27,11 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-95%, -50%);
+  transform: translate(-111.7px, -50%);
+  animation-name: rosado;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 #yellow-stripe {
@@ -35,26 +39,62 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-name: amarillo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 #violet-stripe {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-5%, -50%);
+  transform: translate(-4%, -50%);
   animation-name: violeta;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-timing-function:linear;
+  animation-timing-function: linear;
+  
 }
+
+@keyframes amarillo {
+  0% {
+    transform: translate(-160%, 175%); /*79.5px  */
+  }
+
+54.5% {
+    transform: translate(-103%, 50%);
+  }
+  
+  100% {
+    transform: translate(-50%, -50%); 
+  }
+}
+
+@keyframes rosado {
+  0% {
+    transform: translate(0%, -175%); /*79.5px  */
+  }
+
+54.5% {
+    transform:translate(-44.5%, -150%);
+  }
+  
+  100% {
+    transform: translate(-96%, -50%); 
+  }
+}
+
 @keyframes violeta { 
   0% {
-    transform: translate(-100%, 116%);
+    transform: translate(-114%, 175%); /*79.5px  */
   }
-  35% {
-    transform: translate(-58%, 50%);
+
+54.5% {
+    transform: translate(-57%, 50%);
   }
+  
   100% {
-    transform: translate(-5%, -50%)
+    transform: translate(-4%, -50%); 
   }
 }
