@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  align-items: center;
+}
+
+h1 {
+  font-family: Lusitana;
+  text-align: center;
+  color: white;
+  position: absolute;
+  font-weight: 400;
+  transform: translate(-50%, -20%);
+  font-size: 3em;
+}
+
+#pink-stripe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-111.7px, -50%);
+  animation-name: rosado;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+#yellow-stripe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: amarillo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+#violet-stripe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-4%, -50%);
+  animation-name: violeta;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes amarillo {
+  0% {
+    transform: translate(-160%, 175%); /*79.5px  */
+  }
+
+54.5% {
+    transform: translate(-103%, 50%);
+  }
+  
+  100% {
+    transform: translate(-50%, -50%); 
+  }
+}
+
+@keyframes rosado {
+  0% {
+    transform: translate(0%, -175%); /*79.5px  */
+  }
+
+54.5% {
+    transform:translate(-44.5%, -150%);
+  }
+  
+  100% {
+    transform: translate(-96%, -50%); 
+  }
+}
+
+@keyframes violeta { 
+  0% {
+    transform: translate(-114%, 175%); /*79.5px  */
+  }
+
+54.5% {
+    transform: translate(-57%, 50%);
+  }
+  
+  100% {
+    transform: translate(-4%, -50%); 
+  }
+}
